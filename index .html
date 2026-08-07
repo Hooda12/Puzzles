@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>🧠 عبقري اليوم - ألغاز ذكاء</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="comboDisplay">⭐ مستوى جديد!</div>
+
+    <div class="game-container">
+        <div class="header">
+            <h1>🧠 عبقري اليوم</h1>
+            <div class="level-badge">🏆 مستوى <span id="levelDisplay">1</span></div>
+        </div>
+
+        <div class="info">
+            <span>⭐ <span id="starsDisplay">0</span></span>
+            <span>🎯 <span id="scoreDisplay">0</span></span>
+            <span>💡 <span id="hintDisplay">3</span></span>
+            <span>🤖 <span id="aiStatus">⏳</span></span>
+        </div>
+
+        <div id="puzzleArea">
+            <div id="puzzleTitle">🧩 اللغز الأول</div>
+            <div id="puzzleContent">❓</div>
+            <div id="options"></div>
+            <div id="timerBar"><div id="timerFill"></div></div>
+        </div>
+
+        <div id="message">💡 اختر الإجابة الصحيحة</div>
+
+        <div style="display: flex; gap: 10px; margin-top: 12px;">
+            <button class="btn" id="nextBtn" style="flex: 1;">➡️ التالي</button>
+            <button class="btn hint-btn" id="aiHintBtn" style="flex: 1; background: linear-gradient(145deg, #7b61ff, #5a3fd8); box-shadow: 0 6px 0 #2f1a8a;">
+                🤖 ذكاء اصطناعي
+            </button>
+        </div>
+        <button class="btn hint-btn" id="hintBtn" style="margin-top: 8px;">💡 تلميح (يستهلك نقطة)</button>
+    </div>
+
+    <script src="puzzles.js"></script>
+    <script src="ai-helper.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
